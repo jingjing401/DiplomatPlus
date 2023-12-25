@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28C906AA2B391718001C60E7 /* WechatOpenSDK-XCFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C906A92B391718001C60E7 /* WechatOpenSDK-XCFramework.xcframework */; };
-		28C906B02B391B57001C60E7 /* WechatProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C906AF2B391B57001C60E7 /* WechatProxy.m */; };
+		28C906B52B391CCA001C60E7 /* WechatProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C906B22B391CCA001C60E7 /* WechatProxy.m */; };
+		28C906B62B391CCA001C60E7 /* WechatOpenSDK-XCFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28C906B32B391CCA001C60E7 /* WechatOpenSDK-XCFramework.xcframework */; };
 		28F37A8F2B34315D004D4FBD /* Diplomat.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F37A8D2B34315D004D4FBD /* Diplomat.m */; };
 		28F37A902B34315D004D4FBD /* Diplomat-acknowledgements.md in Resources */ = {isa = PBXBuildFile; fileRef = 28F37A8E2B34315D004D4FBD /* Diplomat-acknowledgements.md */; };
 		28F37AAD2B353E32004D4FBD /* WeiboSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 28F37A952B353E32004D4FBD /* WeiboSDK.bundle */; };
@@ -45,9 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		28C906A92B391718001C60E7 /* WechatOpenSDK-XCFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "WechatOpenSDK-XCFramework.xcframework"; sourceTree = "<group>"; };
-		28C906AE2B391B57001C60E7 /* WechatProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatProxy.h; sourceTree = "<group>"; };
-		28C906AF2B391B57001C60E7 /* WechatProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WechatProxy.m; sourceTree = "<group>"; };
+		28C906B22B391CCA001C60E7 /* WechatProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WechatProxy.m; sourceTree = "<group>"; };
+		28C906B32B391CCA001C60E7 /* WechatOpenSDK-XCFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "WechatOpenSDK-XCFramework.xcframework"; sourceTree = "<group>"; };
+		28C906B42B391CCA001C60E7 /* WechatProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatProxy.h; sourceTree = "<group>"; };
 		28F37A8C2B34315D004D4FBD /* Diplomat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diplomat.h; sourceTree = "<group>"; };
 		28F37A8D2B34315D004D4FBD /* Diplomat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Diplomat.m; sourceTree = "<group>"; };
 		28F37A8E2B34315D004D4FBD /* Diplomat-acknowledgements.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "Diplomat-acknowledgements.md"; sourceTree = "<group>"; };
@@ -102,7 +102,7 @@
 			files = (
 				61A81AA71B54F3DC00CF33F7 /* CoreTelephony.framework in Frameworks */,
 				28F37AB02B353E32004D4FBD /* TencentOpenAPI.framework in Frameworks */,
-				28C906AA2B391718001C60E7 /* WechatOpenSDK-XCFramework.xcframework in Frameworks */,
+				28C906B62B391CCA001C60E7 /* WechatOpenSDK-XCFramework.xcframework in Frameworks */,
 				616502331B034FCC004246A3 /* ImageIO.framework in Frameworks */,
 				28F37AB62B353EE8004D4FBD /* libWeiboSDK.a in Frameworks */,
 				6165022D1B030403004246A3 /* libsqlite3.dylib in Frameworks */,
@@ -122,12 +122,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		28C906A82B391718001C60E7 /* WeChatOpenSDK */ = {
+		28C906B12B391CCA001C60E7 /* WeChatOpenSDK */ = {
 			isa = PBXGroup;
 			children = (
-				28C906AE2B391B57001C60E7 /* WechatProxy.h */,
-				28C906AF2B391B57001C60E7 /* WechatProxy.m */,
-				28C906A92B391718001C60E7 /* WechatOpenSDK-XCFramework.xcframework */,
+				28C906B32B391CCA001C60E7 /* WechatOpenSDK-XCFramework.xcframework */,
+				28C906B42B391CCA001C60E7 /* WechatProxy.h */,
+				28C906B22B391CCA001C60E7 /* WechatProxy.m */,
 			);
 			path = WeChatOpenSDK;
 			sourceTree = "<group>";
@@ -234,7 +234,7 @@
 		616502071B008ED4004246A3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				28C906A82B391718001C60E7 /* WeChatOpenSDK */,
+				28C906B12B391CCA001C60E7 /* WeChatOpenSDK */,
 				28F37AA12B353E32004D4FBD /* Tencent */,
 				28F37A922B353E32004D4FBD /* Weibo */,
 				28F37A8E2B34315D004D4FBD /* Diplomat-acknowledgements.md */,
@@ -363,12 +363,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				616501EA1B0088DF004246A3 /* ViewController.m in Sources */,
-				28C906B02B391B57001C60E7 /* WechatProxy.m in Sources */,
 				28F37AAF2B353E32004D4FBD /* WeiboProxy.m in Sources */,
 				616501E71B0088DF004246A3 /* AppDelegate.m in Sources */,
 				616501E41B0088DF004246A3 /* main.m in Sources */,
 				61A81AA41B54D6A600CF33F7 /* UIImage+DiplomatResize.m in Sources */,
 				28F37A8F2B34315D004D4FBD /* Diplomat.m in Sources */,
+				28C906B52B391CCA001C60E7 /* WechatProxy.m in Sources */,
 				28F37AB12B353E32004D4FBD /* QQProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
