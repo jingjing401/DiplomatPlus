@@ -53,14 +53,7 @@ static enum WXScene kWechatScene = WXSceneSession;
 - (void)loginWithType:(NSString *)type
 {
     
-    WXLaunchMiniProgramReq *req = [WXLaunchMiniProgramReq object];
-    req.userName = @"gh_62b3752b0359";//[InitDataHelper miniprogramIDUrl];
-    req.path =@"";// path;
-    if([WXApi isWXAppInstalled]) {
-        [WXApi sendReq:req completion:nil];
-    }else {
-//        [[HUDHelper sharedHelper] showHUDOnFrontWithTitle:@"未安装手机微信" for:1];
-    }
+
   [[Diplomat sharedInstance] authWithName:type
                                 completed:^(id result, NSError *error) {
                                   [self showText:result];
